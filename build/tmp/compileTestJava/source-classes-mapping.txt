@@ -1,2 +1,4 @@
 com/dataStructureLinkedList/MyNodeTest.java
  com.dataStructureLinkedList.MyNodeTest
+com/dataStructureLinkedList/MyLinkedListTest.java
+ com.dataStructureLinkedList.MyLinkedListTest

@@ -1,2 +1,6 @@
+com/dataStructureLinkedList/MyLinkedList.java
+ com.dataStructureLinkedList.MyLinkedList
 com/dataStructureLinkedList/MyNode.java
  com.dataStructureLinkedList.MyNode
+com/dataStructureLinkedList/INode.java
+ com.dataStructureLinkedList.INode
