@@ -112,7 +112,20 @@ public class MyLinkedList<K> {
         }
         return null;
     }
-    
+
+    /**
+     * Delete Specified Element in the linked list
+     * @param key
+     */
+    public void popElement(K key) {
+        INode tempNode = head;
+        while (tempNode.getNext().getKey() != key) {
+            tempNode = tempNode.getNext();
+        }
+        tempNode.setNext(tempNode.getNext().getNext());
+    }
+
+
     /**
      * Print my node when I appending the node
      * then it will be adding to front node
@@ -127,5 +140,19 @@ public class MyLinkedList<K> {
         }
         myNodes.append(tempNode.getKey());
         System.out.println(myNodes);
+    }
+
+    /**
+     * It will give me the size of LinkedList
+     * @return
+     */
+    public int getSize() {
+        int size = 0;
+        INode tempNode = head;
+        while (tempNode != null) {
+            size++;
+            tempNode = tempNode.getNext();
+        }
+        return size;
     }
 }

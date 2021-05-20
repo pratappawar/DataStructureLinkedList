@@ -140,4 +140,27 @@ public class MyLinkedListTest {
                 && myLinkedList.tail.equals(myFirstNode));
         Assertions.assertTrue(result);
     }
+
+    /**
+     * Ability to delete 40 from the Linked
+     * List sequence of 56->30->40->70
+     * and show the size of LinkedList is 3
+     */
+    @Test
+    public void SearchNodeForGivenElementIfFoundShouldDeleteGivenNodeAndReturnTrue() {
+        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> mySecondNode = new MyNode<>(40);
+        MyNode<Integer> myThirdNode = new MyNode<>(30);
+        MyNode<Integer> myFourthNode = new MyNode<>(56);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.add(myFirstNode);
+        myLinkedList.add(mySecondNode);
+        myLinkedList.add(myThirdNode);
+        myLinkedList.add(myFourthNode);
+        myLinkedList.printMyNode();
+        myLinkedList.popElement(40);
+        myLinkedList.printMyNode();
+        int size=myLinkedList.getSize();
+        Assertions.assertEquals(3,size);
+    }
 }
