@@ -70,7 +70,7 @@ public class MyLinkedList<K> {
     }
 
     /**
-     * Ability to delete the first element in the LinkedList of sequence 56->30->70
+     * delete the first element in the LinkedList of sequence 56->30->70
      * I have Write pop method to delete element.
      * - Final Sequence: 30->70
      * @return
@@ -79,6 +79,22 @@ public class MyLinkedList<K> {
     public INode pop(){
         INode tempNode=this.head;
         this.head=head.getNext();
+        return tempNode;
+    }
+
+    /**
+     *delete the Last element in the LinkedList of sequence 56->30->70
+     * I have Write pop method to delete element.
+     * Final Sequence: 56->30
+     * @return
+     */
+    public INode popLast(){
+        INode tempNode=this.head;
+        while (!tempNode.getNext().equals(tail)) {
+            tempNode=tempNode.getNext();
+        }
+        this.tail=tempNode;
+        tempNode=tempNode.getNext();
         return tempNode;
     }
     
