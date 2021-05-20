@@ -163,4 +163,23 @@ public class MyLinkedListTest {
         int size=myLinkedList.getSize();
         Assertions.assertEquals(3,size);
     }
+
+    /**
+     * Ability to sort the linked list
+     */
+    @Test
+    public void IfLInkedListIsInAscendingOrderReturnTrue() {
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyNode<Integer> myFourthNode = new MyNode<>(40);
+        MyLinkedList<Integer> myLinkedList = new MyLinkedList<Integer>();
+        myLinkedList.sortedLinkedList(myFirstNode);
+        myLinkedList.sortedLinkedList(mySecondNode);
+        myLinkedList.sortedLinkedList(myThirdNode);
+        myLinkedList.sortedLinkedList(myFourthNode);
+        boolean result = myLinkedList.head.equals(mySecondNode) && myLinkedList.head.getNext().equals(myFourthNode)
+                && myLinkedList.head.getNext().getNext().equals(myFirstNode) && myLinkedList.tail.equals(myThirdNode);
+        Assertions.assertEquals(true, result);
+    }
 }

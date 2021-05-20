@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T19:41:04" hostname="LAPTOP-JK99497U" time="0.028">
+<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T19:56:26" hostname="LAPTOP-JK99497U" time="0.028">
   <properties/>
-  <testcase name="SearchNodeForGivenElementIfFoundShouldDeleteGivenNodeAndReturnTrue()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.028"/>
-  <system-out><![CDATA[My Nodes56->30->40->70
-My Nodes56->30->70
-]]></system-out>
+  <testcase name="IfLInkedListIsInAscendingOrderReturnTrue()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.028"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
