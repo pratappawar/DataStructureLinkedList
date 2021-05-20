@@ -4,7 +4,7 @@ public class MyLinkedList<K> {
 
     public INode head;
     public INode tail;
-    public Object INode;
+
 
     /**
      * constructor declared with head and tail which has initially pointing to null
@@ -96,6 +96,22 @@ public class MyLinkedList<K> {
         this.tail=tempNode;
         tempNode=tempNode.getNext();
         return tempNode;
+    }
+
+    /**
+     * search LinkedList to find Node with value 30
+     * @param key
+     * @return
+     */
+    public INode searchElement(K key){
+        INode tempNode=head;
+        while (tempNode!=null){
+            if (tempNode.getKey()==key){
+                 return tempNode;
+            }
+            tempNode = tempNode.getNext();
+        }
+        return null;
     }
     
     /**
