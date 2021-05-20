@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T18:40:10" hostname="LAPTOP-JK99497U" time="0.056">
+<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T19:02:22" hostname="LAPTOP-JK99497U" time="0.067">
   <properties/>
-  <testcase name="givenElementWhenFoundShouldPassLinkedListResult()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.056"/>
+  <testcase name="SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.067"/>
   <system-out><![CDATA[My Nodes70->30->56
+My Nodes70->30->40->56
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

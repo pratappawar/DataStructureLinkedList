@@ -4,8 +4,7 @@ public class MyLinkedList<K> {
 
     public INode head;
     public INode tail;
-
-
+    
     /**
      * constructor declared with head and tail which has initially pointing to null
      */

@@ -5,8 +5,12 @@ import org.junit.jupiter.api.Test;
 
 public class MyLinkedListTest {
 
+    /**
+     * Ability to create simple Linked list and add element into it
+     * and print the elements
+     */
     @Test
-    void given3NumbersWhenAddedToLinkedList_ShouldBeAddedToTop() {
+    public void given3NumbersWhenAddedToLinkedList_ShouldBeAddedToTop() {
         MyNode<Integer> myFirstNode = new MyNode<>(70);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(56);
@@ -21,8 +25,11 @@ public class MyLinkedListTest {
         Assertions.assertTrue(result);
     }
 
+    /**
+     * Ability to add the node at last
+     */
     @Test
-    void given3NumbersWhenAppendedToLinkedList_ShouldBeAddedToLast() {
+   public void given3NumbersWhenAppendedToLinkedList_ShouldBeAddedToLast() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -37,8 +44,11 @@ public class MyLinkedListTest {
         Assertions.assertTrue(result);
     }
 
+    /**
+     * Ability to Insert a Node in Between the Nodes
+     */
     @Test
-    void given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedListResult() {
+   public void given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedListResult() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -53,8 +63,11 @@ public class MyLinkedListTest {
         Assertions.assertTrue(result);
     }
 
+    /**
+     * Ability to delete First Element
+     */
     @Test
-    void given1stElementWhenDeleteShouldPassLinkedListResult() {
+   public void given1stElementWhenDeleteShouldPassLinkedListResult() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -69,8 +82,11 @@ public class MyLinkedListTest {
         Assertions.assertTrue(result);
     }
 
+    /**
+     * Ability to Delete last Element in LinkedList
+     */
     @Test
-    void givenLastElementWhenDeleteShouldPassLinkedListResult() {
+   public void givenLastElementWhenDeleteShouldPassLinkedListResult() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -85,8 +101,11 @@ public class MyLinkedListTest {
         Assertions.assertEquals(deleteNode,mySecondNode);
     }
 
+    /**
+     * Ability to search Element
+     */
     @Test
-    void givenElementWhenFoundShouldPassLinkedListResult() {
+   public void givenElementWhenFoundShouldPassLinkedListResult() {
         MyNode<Integer> myFirstNode = new MyNode<>(56);
         MyNode<Integer> mySecondNode = new MyNode<>(30);
         MyNode<Integer> myThirdNode = new MyNode<>(70);
@@ -97,5 +116,28 @@ public class MyLinkedListTest {
         myLinkedList.printMyNode();
         INode search=myLinkedList.searchElement(30);
         Assertions.assertEquals(search,mySecondNode);
+    }
+
+    /**
+     * Ability to search Element and insert the new Element After Search Element
+     */
+    @Test
+   public void SearchDataNodeForGivenDataIfFoundShouldInsertGivenNodeAndReturnTrue() {
+        MyNode<Integer> myFirstNode = new MyNode<>(56);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(70);
+        MyNode<Integer> myFourthNode = new MyNode<>(40);
+        MyLinkedList myLinkedList = new MyLinkedList();
+        myLinkedList.add(myFirstNode);
+        myLinkedList.add(mySecondNode);
+        myLinkedList.add(myThirdNode);
+        myLinkedList.printMyNode();
+        INode search=myLinkedList.searchElement(30);
+        myLinkedList.insert(search,myFourthNode);
+        myLinkedList.printMyNode();
+        boolean result = (myLinkedList.head.equals(myThirdNode) && myLinkedList.head.getNext().equals(search)
+                && myLinkedList.head.getNext().getNext().equals(myFourthNode)
+                && myLinkedList.tail.equals(myFirstNode));
+        Assertions.assertTrue(result);
     }
 }
