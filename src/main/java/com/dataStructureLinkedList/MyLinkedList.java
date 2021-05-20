@@ -57,6 +57,18 @@ public class MyLinkedList<K> {
     }
 
     /**
+     * Ability to insert 30 between 56 and 70
+     * - Final Sequence: 56->30->70
+     * @param myNode
+     * @param newNode
+     */
+    public void insert(INode myNode,INode newNode){
+        INode tempNode=myNode.getNext();
+        myNode.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
+    
+    /**
      * Print my node when I appending the node
      * then it will be adding to front node
      */
