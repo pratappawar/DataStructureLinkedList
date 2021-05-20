@@ -5,6 +5,9 @@ public class MyLinkedList<K> {
     public INode head;
     public INode tail;
 
+    /**
+     * constructor declared with head and tail which has initially pointing to null
+     */
     public MyLinkedList() {
         this.head=null;
         this.tail=null;
@@ -12,6 +15,11 @@ public class MyLinkedList<K> {
 
     /**
      * Adding New node to existing node logic
+     *  create Linked List by adding 30 and 56 to 70
+     *  Node with data 70 is First Created
+     *  -Next 30 is added to 70
+     * - Finally 56 is added to 30
+     * - LinkedList Sequence: 56->30->70
      * @param newNode
      */
     public void add(INode newNode) {
@@ -25,6 +33,26 @@ public class MyLinkedList<K> {
             INode tempNode=this.head;
             this.head=newNode;
             this.head.setNext(tempNode);
+        }
+    }
+
+    /**
+     * Ability to create Linked List by appending 30 and 70 to 56
+     * Node with data 56 is First Created
+     * - Next Append 30 to 56
+     * - Finally Append 70 to 30
+     * - LinkedList Sequence: 56->30->70
+     * @param newNode
+     */
+    public void append(INode newNode) {
+        if (this.head==null){
+            this.head=newNode;
+        }
+        if (this.tail==null){
+            this.tail=newNode;
+        }else {
+            this.tail.setNext(newNode);
+            this.tail=newNode;
         }
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T14:45:32" hostname="LAPTOP-JK99497U" time="0.03">
+<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T15:58:04" hostname="LAPTOP-JK99497U" time="0.027">
   <properties/>
-  <testcase name="given3NumbersWhenAddedToLinkedList_ShouldBeAddedToTop()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.03"/>
+  <testcase name="given3NumbersWhenAppendedToLinkedList_ShouldBeAddedToLast()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.027"/>
   <system-out><![CDATA[My Nodes56->30->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
