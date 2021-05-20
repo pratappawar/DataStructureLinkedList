@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T16:37:57" hostname="LAPTOP-JK99497U" time="0.023">
+<testsuite name="com.dataStructureLinkedList.MyLinkedListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T17:25:38" hostname="LAPTOP-JK99497U" time="0.029">
   <properties/>
-  <testcase name="given3NumbersWhenInsertingSecondInBetweenShouldPassLinkedListResult()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.023"/>
-  <system-out><![CDATA[My Nodes56->30->70
+  <testcase name="given1stElementWhenDeleteShouldPassLinkedListResult()" classname="com.dataStructureLinkedList.MyLinkedListTest" time="0.029"/>
+  <system-out><![CDATA[My Nodes30->56
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

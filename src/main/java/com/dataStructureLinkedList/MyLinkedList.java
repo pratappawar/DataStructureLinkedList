@@ -4,6 +4,7 @@ public class MyLinkedList<K> {
 
     public INode head;
     public INode tail;
+    public Object INode;
 
     /**
      * constructor declared with head and tail which has initially pointing to null
@@ -66,6 +67,19 @@ public class MyLinkedList<K> {
         INode tempNode=myNode.getNext();
         myNode.setNext(newNode);
         newNode.setNext(tempNode);
+    }
+
+    /**
+     * Ability to delete the first element in the LinkedList of sequence 56->30->70
+     * I have Write pop method to delete element.
+     * - Final Sequence: 30->70
+     * @return
+     * @param
+     */
+    public INode pop(){
+        INode tempNode=this.head;
+        this.head=head.getNext();
+        return tempNode;
     }
     
     /**
