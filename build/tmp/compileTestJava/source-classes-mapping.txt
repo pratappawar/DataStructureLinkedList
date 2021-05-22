@@ -2,5 +2,7 @@ com/dataStructureLinkedList/MyNodeTest.java
  com.dataStructureLinkedList.MyNodeTest
 com/dataStructureLinkedList/MyLinkedListTest.java
  com.dataStructureLinkedList.MyLinkedListTest
+com/dataStructureLinkedList/MyQueueTest.java
+ com.dataStructureLinkedList.MyQueueTest
 com/dataStructureLinkedList/MyStackTest.java
  com.dataStructureLinkedList.MyStackTest

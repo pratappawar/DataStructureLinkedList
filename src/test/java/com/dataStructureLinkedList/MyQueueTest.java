@@ -1,0 +1,23 @@
+package com.dataStructureLinkedList;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class MyQueueTest {
+    /**
+     * Test case to check the 3 given numbers Are enqueue in the queue or not
+     */
+    @Test
+    public void given3_No_When_AddedToQueue_Should_Have_LastAddedNode(){
+        MyNode<Integer> myFirstNode = new MyNode<>(70);
+        MyNode<Integer> mySecondNode = new MyNode<>(30);
+        MyNode<Integer> myThirdNode = new MyNode<>(56);
+        MyQueue myQueue = new MyQueue();
+        myQueue.enqueue(myFirstNode);
+        myQueue.enqueue(mySecondNode);
+        myQueue.enqueue(myThirdNode);
+        myQueue.printQueue();
+        INode peak=myQueue.peak();
+        Assertions.assertEquals(myFirstNode,peak);
+    }
+}

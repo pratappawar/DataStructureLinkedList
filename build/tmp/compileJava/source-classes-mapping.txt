@@ -6,3 +6,5 @@ com/dataStructureLinkedList/MyNode.java
  com.dataStructureLinkedList.MyNode
 com/dataStructureLinkedList/MyStack.java
  com.dataStructureLinkedList.MyStack
+com/dataStructureLinkedList/MyQueue.java
+ com.dataStructureLinkedList.MyQueue

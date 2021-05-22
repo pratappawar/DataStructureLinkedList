@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dataStructureLinkedList.MyQueueTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-22T20:11:21" hostname="LAPTOP-JK99497U" time="0.051">
+  <properties/>
+  <testcase name="given3_No_When_AddedToQueue_Should_Have_LastAddedNode()" classname="com.dataStructureLinkedList.MyQueueTest" time="0.051"/>
+  <system-out><![CDATA[My Nodes70->30->56
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
