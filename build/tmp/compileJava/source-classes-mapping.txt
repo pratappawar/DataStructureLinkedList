@@ -1,8 +1,8 @@
 com/dataStructureLinkedList/MyLinkedList.java
  com.dataStructureLinkedList.MyLinkedList
-com/dataStructureLinkedList/MyStack.java
- com.dataStructureLinkedList.MyStack
-com/dataStructureLinkedList/MyNode.java
- com.dataStructureLinkedList.MyNode
 com/dataStructureLinkedList/INode.java
  com.dataStructureLinkedList.INode
+com/dataStructureLinkedList/MyNode.java
+ com.dataStructureLinkedList.MyNode
+com/dataStructureLinkedList/MyStack.java
+ com.dataStructureLinkedList.MyStack

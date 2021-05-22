@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dataStructureLinkedList.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-22T19:02:03" hostname="LAPTOP-JK99497U" time="0.033">
+<testsuite name="com.dataStructureLinkedList.MyStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-22T19:36:02" hostname="LAPTOP-JK99497U" time="0.028">
   <properties/>
-  <testcase name="given3_No_When_AddedToStack_Should_Have_LastAddedNode()" classname="com.dataStructureLinkedList.MyStackTest" time="0.033"/>
+  <testcase name="given3_No_When_AddedToStack_Should_Have_LastAddedNode()" classname="com.dataStructureLinkedList.MyStackTest" time="0.028"/>
   <system-out><![CDATA[My Nodes56->30->70
-My Nodes56->30->70
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
